@@ -14,12 +14,12 @@ const Layout = () => {
       link: "/about",
     },
     {
-      name: "Contact",
-      link: "/contact",
-    },
-    {
       name: "Service",
       link: "/service",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
     },
   ];
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +56,7 @@ const Layout = () => {
     <>
       {/* Navbar */}
       <div
-        className={`bg-gradient-to-r bg-[#FFFFFC] h-14 w-full  flex items-center justify-between px-4 sticky top-0 z-50 transition-shadow duration-300 ${
+        className={`bg-gradient-to-r bg-[#FFFFFC]  h-20 w-full  flex items-center justify-between px-4 sticky top-0 z-50 transition-shadow duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
       >
@@ -82,16 +82,15 @@ const Layout = () => {
               </div>
             );
           })}
-          <Link
-            to="/"
-            className="border-2 border-[red] my-2 text-[#1B2E35] px-6 py-3 rounded-full font-semibold text-base sm:text-lg hover:bg-white hover:text-[#11E4C1] transition duration-300"
-          >
-            Apoinment
+          <Link to="/" className="">
+            <button className="border-2 border-[#142E38]  px-6 py-3 rounded-full font-semibold text-base sm:text-lg hover:bg-[#e93cf2] hover: text-[#11E4C1] transition duration-300 cursor-pointer hover:uppercase ">
+              Book An Appointment
+            </button>
           </Link>
         </ul>
         {/* Hamburger Icon */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-[#df2fc2] focus:outline-none"
           onClick={toggleSidebar}
           aria-label="Toggle sidebar"
         >
@@ -113,20 +112,7 @@ const Layout = () => {
             onClick={toggleSidebar}
             aria-label="Close sidebar"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <AlignLeft className="transform rotate-180" />
           </button>
         </div>
         <ul className="flex flex-col gap-4 p-4 text-white font-semibold text-lg">
@@ -179,8 +165,8 @@ const Layout = () => {
       {/* Hero Section */}
       <section className="h-screen bg-gradient-to-r from-indigo-700 to-purple-600 flex items-center bg-[url(/back.jpg)] bg-no-repeat justify-center text-white px-4">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in text-[#142E38]">
-            Welcome to <span className="text-[#F717E1]">Bharat</span> Automobile
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in text-[#142E38]">
+            Welcome to <span className="text-[#F717E1]">Bharat</span> Automobile Service
           </h1>
           <p className="  sm:text-xl md:text-2xl lg:text-1xl mb-4 max-w-1xl mx-auto text-[#171021] bg-opacity-50 p-4 ">
             Experience the best in automobile service and repair. Our expert
