@@ -1,12 +1,39 @@
-# React + Vite
+🌐 Frontend Ideas
+Tech Stack:
+React.js (with Vite or Create React App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tailwind CSS / Bootstrap / Styled Components
 
-Currently, two official plugins are available:
+React Router (for page navigation)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Axios (for API calls)
 
-## Expanding the ESLint configuration
+Formik + Yup (for forms and validation)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Toastify (for notifications)
+
+UI Pages/Components:
+1. Landing Page
+Intro banner
+
+Why choose us
+
+Testimonials
+
+Call to action (Book Now)
+
+2. User Dashboard
+My Bikes (with add/edit/delete)
+
+Upcoming Service Appointments
+
+Service History (with filters)
+
+Book New Service (form with available dates/times)
+
+Notifications / Reminders
+
+3. Admin Dashboard
+Booking Management Table
+
+Add/Edit Services
