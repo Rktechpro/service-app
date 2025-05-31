@@ -10,11 +10,15 @@ import Service from "./components/Service/Service";
 import NotFound from "./page/404/NotFound";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import Hero from "./components/HeroSection/Hero";
 
 const App = () => {
   return (
     <div>
       <Layout />
+      <div>
+        <Hero/>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

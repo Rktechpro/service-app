@@ -28,7 +28,7 @@ const HowTowork = () => {
     <section className="relative  text-white">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-50"
+        className="absolute inset-0 bg-cover bg-center opacity-70 bg-no-repeat  "
         style={{ backgroundImage: `url('./background.jpg')` }}
       ></div>
       <div className="relative z-10 py-20 px-6 md:px-12 text-center">
