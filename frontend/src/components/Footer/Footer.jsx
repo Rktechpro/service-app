@@ -3,6 +3,7 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  LucideMapPinned,
   Mail,
   Map,
   Phone,
@@ -13,19 +14,19 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const socialMediaicon = [
     {
-      icon: <Facebook className="hover:text-blue-400" />,
+      icon: <Facebook className="hover:text-blue-400" size={32} />,
       link: "#",
     },
     {
-      icon: <Instagram className="hover:text-pink-500" />,
+      icon: <Instagram className="hover:text-pink-500" size={32} />,
       link: "#",
     },
     {
-      icon: <Youtube className="hover:text-red-500" />,
+      icon: <Youtube className="hover:text-red-500" size={32} />,
       link: "#",
     },
     {
-      icon: <Linkedin className="hover:text-blue-300" />,
+      icon: <Linkedin className="hover:text-blue-300" size={32} />,
       link: "#",
     },
   ];
@@ -50,17 +51,17 @@ const Footer = () => {
   const ContactInfo = [
     {
       name: "Address",
-      icon: <Map className="mr-2 mt-1 text-7xl" />,
+      icon: <LucideMapPinned className="mr-2 " size={32} />,
       info: '"Samay", 6-Archna Park, Nr. Dholakia School, Sadhu Vaswani Road, Rajkot - 360005',
     },
     {
       name: "Email",
-      icon: <Mail className="mr-2 text-xl" />,
+      icon: <Mail className="mr-2 " size={32} />,
       info: "bharatautomobileservice@email.com",
     },
     {
       name: "Phone",
-      icon: <Phone className="mr-2" />,
+      icon: <Phone className="mr-2" size={32} />,
       info: "1800 1234 108",
     },
   ];
